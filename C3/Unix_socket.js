@@ -17,9 +17,9 @@ http.createServer((req, res) => {
 	for(var i = 0; i < 100; i++){
 		res.write(i + '\n');
 	}
- ,,
+
 	//open and read in file contents
 	var data = fs.readFileSync(file, 'utf-8');
 	res.write(data);
 	res.end();
-}).listen('tmp/node-server-sock');
+}).listen('/tmp/node-server-sock');
