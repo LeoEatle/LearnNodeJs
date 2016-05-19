@@ -12,7 +12,7 @@ process.stdin.resume();
 
 process.stdin.on('data', function(data){
 	client.write(data);
-});ppppp
+});
 
 client.on('data', function(data){
 	console.log(data);
